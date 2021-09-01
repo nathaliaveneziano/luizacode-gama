@@ -1,0 +1,22 @@
+# Comandos utilizados:
+
+  - ## Configurando o Ambiente
+    - Instalação do Yarn -> `npm install --global yarn`
+    - Iniciando Projeto -> `yarn init`
+    - Instalando Express -> `yarn add express`
+    - Recursos Globais (complementar os do typescript)  -> `npm install ou npm i`
+
+  - ## Conectando o projeto ao TypeScript
+    - Dependências de desenvolvimento de typescript -> `yarn add typescript -D`
+    - Adicionar o typescript ao projeto -> `yarn tsc --init`
+    - Dependência de ambiente de execução do projeto -> `yarn add ts-node-dev -D`
+    - Dependência do typescript para express -> `yarn add @types/express -d`
+    - Rodando servidor -> `yarn <palavra-chave / start / dev>`
+
+  - ## Trabalhando com Banco de Dados
+    - Adicionando Knex -> `yarn add knex`
+    - Adicionando as dependências do MySQL -> `yarn add mysql2`
+    - Instalando Knex globalmente -> `npm install -g knex`
+    - Criando Migrations -> `knex migrate:make <nome>`
+      - Se der erro, tente -> `npm install mysql2 --save`
+    - Executando a criação das tabelas no banco -> `yarn knex migrate:latest`
